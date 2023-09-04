@@ -1,0 +1,28 @@
+{
+  "name": "ts-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js ",
+    "build": "npm run clean && tsc -p .",
+    "dev": "npm run clean && npm run watch",
+    "watch": "tsc-watch --onSuccess \"node ./dist/server.js\"",
+    "clean": "rimraf dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.5.8",
+    "@types/websocket": "^1.0.6",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "redis": "^4.6.8",
+    "websocket": "^1.0.34"
+  }
+}

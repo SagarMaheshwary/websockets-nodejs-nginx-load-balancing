@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "ES6",
+		"noImplicitAny": true,
+		"moduleResolution": "Node",
+		"sourceMap": false,
+		"outDir": "dist",
+		"baseUrl": "./src/",
+		"strictNullChecks": true,
+		"declaration": true
+	},
+	"include": ["./src/**/*"],
+	"exclude": ["./node_modules", "./client", "**/*.spec.ts"]
+}
